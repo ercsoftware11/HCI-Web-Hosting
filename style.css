@@ -3,6 +3,10 @@ body {
     font-family: arial;
 }
 
+a {
+    color: #DE1B1B;
+}
+
 #wrapper {
 	width: 70%; 
 	margin-right: auto; 
@@ -27,7 +31,6 @@ body {
 
 
 #footer {
-	height: 40px;
     clear: both;
     color: white;
     background-color: #333;
@@ -145,4 +148,9 @@ ul.breadcrumb li a:hover {
     padding: 2px 16px;
     padding-bottom: 20px;
     margin-bottom: 20px;
+}
+
+.copyright-text {
+    font-size: 10px;
+    color: gray;
 }
