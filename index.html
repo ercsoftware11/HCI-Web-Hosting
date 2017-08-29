@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Home | Museum of Science and Technology</title>
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="modal.css">
+    <link rel="stylesheet" type="text/css" href="material-button.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header"><a href="index.html"><img src="Logo.png" alt="" width="80%"/><a/></div>
+            
+             <div id="nav">
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="exhibits.html">Exhibits</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li style="float: right; margin-right: 10px;"><a href="#popup-times">Opening Times</a></li>
+                </ul>
+            </div>
+        
+ <div id="popup-times" class="overlay">
+                <div class="popup">
+                    <h2>Opening Times</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+
+                        <table style="text-align: right;">
+                            <tr>
+                                <th>Mon - Thur :</th>
+                                <td>10:00am to 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <th>Fri: </th>
+                                <td>10:00am to 1:00pm, 2:00pm to 6:00pm</td>
+                            </tr>
+                            <tr>
+                                <th>Sat: </th>
+                                <td>8:00am to 4:00pm</td>
+                            </tr>
+                            <tr>
+                                <th>Sun: </th>
+                                <td>Closed</td>
+                            </tr>
+                            <tr>
+                                <th>Public Holidays: </th>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                        
+                        <br>
+                        <a href="about.html"><p>Click here for more information</p></a>
+                    </div>
+                </div>
+            </div>
+
+        <div id="main-content">
+            <h2>Welcome</h2>
+            <p>Welcome to the Museum of Science and Technology official website. Click on a artefact section below to view more details</p>
+
+            <br>
+
+            <center>
+                <img src="Navigation_Map.JPG" alt="Floor Map" usemap="#floormap">
+
+                <map name="floormap">
+                    <area shape="circle" coords="68,228,48" alt="Vehicles" href="vehicles.html">
+                    <area shape="circle" coords="240,70,42" alt="Robots" href="robots.html">
+                    <area shape="circle" coords="413,233,43" alt="DaVinci" href="davinci.html">
+                </map>
+
+            </center>
+        </div>
+        <div id="footer">
+            <p>&copy; 2017 Museum of Science and Technology</p>
+        </div>
+    </div>
+</body>
