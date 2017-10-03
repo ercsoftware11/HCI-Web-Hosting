@@ -1,32 +1,175 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
     <title>About | Museum of Science and Technology</title>
+
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="modal.css">
+
+
+    <meta name="keywords" content="Museum, Towsville, Local, Entertainment, DaVinci, Robots, Vehicles, History" />
+    <meta name="description" content="Leap back in time at the Townsville Museum of Science and Technology (M.O.S.T)" />
+    <meta name="author" content="ERC Software">
+
+    <!-- SCHEMA LOCAL BUSINESS -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Museum",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Townsville City",
+                "addressRegion": "QLD",
+                "postalCode": "4810",
+                "streetAddress": "1/538 Flinders St"
+            },
+            "name": "Museum of Science and Technology",
+            "openingHours": [
+                "Mon-Thur: 10:00-16:00",
+                "Fri: 10:00-13:00 : 14:00-18:00",
+                "Sun: Closed",
+                "Public Holidays: Closed"
+            ],
+            "telephone": "(408) 714-1489",
+            "url": "http://www.most-townsville.com"
+        }
+    </script>
+
+    <style>
+        /* Custom CSS */
+    </style>
+
 </head>
 
 <body>
-    <div id="wrapper">
-        <div id="header"><a href="index.html"><img src="Logo.png" alt="" width="80%"/><a/></div>
-            
-             <div id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="exhibits.html">Exhibits</a></li>
-                    <li><a class="active" href="about.html">About</a></li>
-                    <li style="float: right; margin-right: 10px;"><a href="#popup-times">Opening Times</a></li>
-                </ul>
-            </div>
-        
- <div id="popup-times" class="overlay">
-                <div class="popup">
-                    <h2>Opening Times</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
+    <div class="container col-centered">
+        <div class="row">
+            <div class="col-sm-12">
 
-                        <table style="text-align: right;">
+                <header>
+                    <div class="container-fluid ">
+                        <!-- <a href="index.html"><img src="Logo.png" alt="Museum of Science and Technology"/><a/>-->
+                            <a href="index.html"><h1 style="text-align: center;">Museum of Science and Technology</h1></a>
+                    </div>
+                </header>
+
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+                            
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Exhibits <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="davinci.html">DaVinci</a></li>
+                                        <li><a href="robots.html">Robots</a></li>
+                                        <li><a href="vehicles.html">Vehicles</a></li>
+                                    </ul>
+                                </li>
+                                <li class="active"><a href="about.html">About</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Opening Times</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <section id="main-content" class="col-xs-12">
+                            <!-- Main content. Divide grid as required. -->
+                            <h3>About</h3>
+                            <p>This is the about page where you can find all necessary information about the museum</p>
+                
+
+                            <br>
+                            <h4><b>Opening Hours</b></h4>
+                             <table>
+                                            <tr>
+                                                <td>Mon - Thur :</td>
+                                                <td>10:00am to 4:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Fri: </td>
+                                                <td>10:00am to 1:00pm, 2:00pm to 6:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sat: </td>
+                                                <td>8:00am to 4:00pm</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sun: </td>
+                                                <td>Closed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Public Holidays: </td>
+                                                <td>Closed</td>
+                                            </tr>
+                            </table>
+                            <h4><b>Entrance Fees</b></h4>      
+                            <table>
+                                            <tr>
+                                                <td>Adults: </td>
+                                                <td>$10.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Children (12 and under): </td>
+                                                <td>$4.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Senior Citizens: </td>
+                                                <td>$1.00</td>
+                                            </tr>
+                                            
+                            </table>
+                            <br>
+                            <h4><b>Private Tours</b></h4>
+                            <p>Private tours can be arranged for groups of 10 to 30 visitors. Please contact management for further details: <a href="mailto:satmuseum@aust.org?Subject=Private%20Tour" target="_top">satmuseum@aust.org</a></p>
+                            <h4><b>Location</b></h4>
+                            <iframe class="col-lg-8 col-md-10 col-sm-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3767108857664!2d146.80960071535898!3d-19.26597742297963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f8df7ab8dae5%3A0xaab50aacc7f5eb0e!2sCQUniversity+-+Townsville!5e0!3m2!1sen!2sau!4v1504009189437" width="600" height="450" frameborder="0" style="border:0" allowfullscreen alt="Map of Museum Location"></iframe>
+                            <br>
+                        </section>
+                    </div>
+                </div>
+
+
+                <footer>
+                    <div class="container-fluid">
+                        <h2>A Footer</h2>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Opening Times</h4>
+                </div>
+                <div class="modal-body">
+                     <table style="text-align: right;">
                             <tr>
                                 <th>Mon - Thur :</th>
                                 <td>10:00am to 4:00pm</td>
@@ -48,74 +191,25 @@
                                 <td>Closed</td>
                             </tr>
                         </table>
-                    
                         <br>
                         <a href="about.html"><p>Click here for more information</p></a>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
 
-        <div id="main-content">
-            <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li>About</li>
-            </ul>
-            <h2>About</h2>
-            <p>This is the about page where you can find all necessary information about the museum</p>
-
-            <br>
-            <h3><b>Opening Hours</b></h3>
-             <table>
-                            <tr>
-                                <td>Mon - Thur :</td>
-                                <td>10:00am to 4:00pm</td>
-                            </tr>
-                            <tr>
-                                <td>Fri: </td>
-                                <td>10:00am to 1:00pm, 2:00pm to 6:00pm</td>
-                            </tr>
-                            <tr>
-                                <td>Sat: </td>
-                                <td>8:00am to 4:00pm</td>
-                            </tr>
-                            <tr>
-                                <td>Sun: </td>
-                                <td>Closed</td>
-                            </tr>
-                            <tr>
-                                <td>Public Holidays: </td>
-                                <td>Closed</td>
-                            </tr>
-            </table>
-            <h3><b>Entrance Fees</b></h3>      
-            <table>
-                            <tr>
-                                <td>Adults: </td>
-                                <td>$10.00</td>
-                            </tr>
-                            <tr>
-                                <td>Children (12 and under): </td>
-                                <td>$4.00</td>
-                            </tr>
-                            <tr>
-                                <td>Senior Citizens: </td>
-                                <td>$1.00</td>
-                            </tr>
-                            
-            </table>
-            <br>
-            <h3><b>Private Tours</b></h3>
-            <p>Private tours can be arranged for groups of 10 to 30 visitors. Please contact management for further details: <a href="mailto:satmuseum@aust.org?Subject=Private%20Tour" target="_top">satmuseum@aust.org</a></p>
-            <h3><b>Location</b></h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.3767108857664!2d146.80960071535898!3d-19.26597742297963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd5f8df7ab8dae5%3A0xaab50aacc7f5eb0e!2sCQUniversity+-+Townsville!5e0!3m2!1sen!2sau!4v1504009189437" width="600" height="450" frameborder="0" style="border:0" allowfullscreen alt="Map of Museum Location"></iframe>
-        </div>
-        <div id="footer">
-            <br>
-            <p>&copy; 2017 Museum of Science and Technology</p>
-            <span class="copyright-text"><p>The images contained therein in the folders marked 'DaVinci' were created by and belongs to Andrew Chiou. The rights and ownership has been asserted on this day 24 June 2013. The copyright owner gives permission for the images to be used as part of the elements for assessment material for courses offered by Central Queensland University. 
-
-The images contained therein in the folders marked 'Robot' and 'Vehicles' were sourced from various internet websites. These images are not used for profit or business purposes. Its sole purpose is for education. The ownership of these images were never clearly asserted or does not exist at the time of their archival. However, all efforts were made to ensure that these images were sourced from a public domain source where the sites has been clearly been asserted as such. In the event that these images are copyighted and ownership can be evidenced, please contact Andrew Chiou (a.chiou@cqu.edu.au) and the images will be immediately removed from this archive.
-</p></span>
         </div>
     </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+    </script>
+
 </body>
+
+</html>

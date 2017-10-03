@@ -1,3 +1,34 @@
+/* Main Page Content */
+header {
+    margin-top: 10px;
+    background-color: #DE1B1B;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* unvisited link in header */
+header a:link {
+    color: black;
+}
+
+/* visited link in header */
+header a:visited {
+    color: black;
+}
+
+/* mouse over link header */
+header a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link in header */
+header a:active {
+    color: black;
+}
+
+
 body {
     background-color: #2B2B2B;
     font-family: arial;
@@ -7,87 +38,40 @@ a {
     color: #DE1B1B;
 }
 
-#wrapper {
-	width: 70%; 
-	margin-right: auto; 
-	margin-left: auto; 
-	/*border: thin solid;*/
-}
-
-#header {
-    height: 20%; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-	background-color: #DE1B1B;
-    padding-top: 10px; 
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #main-content {
-	width: 99%;
-	float: left; 
-    background-color: #fff;
-    padding-left: 1%;
+    background-color: white;
 }
 
-
-#footer {
-    clear: both;
-    color: white;
+footer {
     background-color: #333;
-}
-
-#nav {
-    background-color: #333;
-}
-
-#nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
-}
-
-#nav li {
-    float: left;
-}
-
-#nav li a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
 }
 
-#nav li a:hover {
-    background-color: #111;
+/* Override bootstrap default nav margin */
+.navbar {
+    margin-bottom: 0px;
 }
 
-.active {
-    background-color: #111;
+
+/* Cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; 
 }
 
-.btn-viewmore {
-    background-color: #DE1B1B;
-    color: white;
-    width: 175px; 
-    height: 50px; 
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 10px;
-    float: right;
+.card img {
+    border-radius: 5px 5px 0 0;
 }
 
-.btn {
-    width: 100px; 
-    height: 25px; 
-    background-color: #DE1B1B; 
-    color: white;
-   
-    
-}
 
+/* Breadcrumbs - not used */
 ul.breadcrumb {
     padding: 10px 16px;
     list-style: none;
@@ -113,46 +97,4 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
     color: #DE1B1B;
     text-decoration: underline;
-}
-
-#main-exhibit-left {
-	width: 25%; 
-    height: 500px; 
-    margin-left: 10%;
-	float: left; 
-}
-
-#main-exhibit-center {
-	width: 25%; 
-    height: 500px; 
-    margin-left: 2.5%;
-	float: left; 
-}
-
-#main-exhibit-right {
-    width: 25%; 
-    height: 500px; 
-    margin-right: 10%;
-	float: right;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px; 
-}
-
-.card img {
-    border-radius: 5px 5px 0 0;
-}
-
-.container {
-    padding: 2px 16px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-.copyright-text {
-    font-size: 10px;
-    color: gray;
 }

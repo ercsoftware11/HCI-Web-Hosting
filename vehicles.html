@@ -1,171 +1,273 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Vehicles | Museum of Science and Technology</title>
+
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="modal.css">
+
+
+    <meta name="keywords" content="Museum, Towsville, Local, Entertainment, DaVinci, Robots, Vehicles, History" />
+    <meta name="description" content="Leap back in time at the Townsville Museum of Science and Technology (M.O.S.T)" />
+    <meta name="author" content="ERC Software">
+
+    <!-- SCHEMA LOCAL BUSINESS -->
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Museum",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Townsville City",
+                "addressRegion": "QLD",
+                "postalCode": "4810",
+                "streetAddress": "1/538 Flinders St"
+            },
+            "name": "Museum of Science and Technology",
+            "openingHours": [
+                "Mon-Thur: 10:00-16:00",
+                "Fri: 10:00-13:00 : 14:00-18:00",
+                "Sun: Closed",
+                "Public Holidays: Closed"
+            ],
+            "telephone": "(408) 714-1489",
+            "url": "http://www.most-townsville.com"
+        }
+    </script>
+
+    <style>
+        /* Custom CSS */
+    </style>
+
 </head>
 
 <body>
-   <div id="wrapper">
-        <div id="header"><a href="index.html"><img src="Logo.png" alt="" width="80%"/><a/></div>
-            
-             <div id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="exhibits.html">Exhibits</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li style="float: right; margin-right: 10px;"><a href="#popup-times">Opening Times</a></li>
-                </ul>
-            </div>
-      
- <div id="popup-times" class="overlay">
-                <div class="popup">
-                    <h2>Opening Times</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
+    <div class="container col-centered">
+        <div class="row">
+            <div class="col-sm-12">
 
-                        <table style="text-align: right;">
-                            <tr>
-                                <th>Mon - Thur :</th>
-                                <td>10:00am to 4:00pm</td>
-                            </tr>
-                            <tr>
-                                <th>Fri: </th>
-                                <td>10:00am to 1:00pm, 2:00pm to 6:00pm</td>
-                            </tr>
-                            <tr>
-                                <th>Sat: </th>
-                                <td>8:00am to 4:00pm</td>
-                            </tr>
-                            <tr>
-                                <th>Sun: </th>
-                                <td>Closed</td>
-                            </tr>
-                            <tr>
-                                <th>Public Holidays: </th>
-                                <td>Closed</td>
-                            </tr>
-                        </table>
-                        
-                        <br>
-                        <a href="about.html"><p>Click here for more information</p></a>
+                <header>
+                    <div class="container-fluid ">
+                        <!-- <a href="index.html"><img src="Logo.png" alt="Museum of Science and Technology"/><a/>-->
+                        <a href="index.html"><h1 style="text-align: center;">Museum of Science and Technology</h1></a>
+                    </div>
+                </header>
+
+                <nav class="navbar navbar-inverse navbar-static-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>                        
+                            </button>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li class="dropdown active">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Exhibits <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="davinci.html">DaVinci</a></li>
+                                        <li><a href="robots.html">Robots</a></li>
+                                        <li class="active"><a href="vehicles.html">Vehicles</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="about.html">About</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#myModal" data-toggle="modal" data-target="#myModal">Opening Times</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <section id="main-content" class="col-xs-12">
+                            <!-- Main content. Divide grid as required. -->
+                            
+                            <h3>Vehicles</h3>
+                            <p>See the awesome, the funny, and the weirdest of vehicles</p>
+
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T1.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Bi-Wheel Fun Car</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T2.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Curtiss Wright VZ</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T3.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Lun Class Ekranoplan</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T4.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>One Wheel Motorcycle</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T5.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Bicycle Ambulance</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T6.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Soviet Jet Train</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T7.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Screw-Drive Train Tank</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T8.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>URAL Snowmobile</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T9.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Vertol VZ</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-4 col-lg-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./Vehicles/T10.jpg" alt="Card image cap" style="width:100%; height: 275px;">
+                                    <div class="card-block">
+                                        <p class="card-text"><h4><b>Snow Chopper</b></h4>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+
+                            <br>
+                            <br>
+                            <!--<img src="Navigation_Map.JPG"    alt="Floor Map" usemap="#floormap" class="img-responsive center-block">
+
+                            <map name="floormap">
+                                <area shape="circle" coords="68,228,48" alt="Vehicles" href="vehicles.html">
+                                <area shape="circle" coords="240,70,42" alt="Robots" href="robots.html">
+                                <area shape="circle" coords="413,233,43" alt="DaVinci" href="davinci.html">
+                            </map>-->
+                        </section>
                     </div>
                 </div>
+
+
+                <footer>
+                    <div class="container-fluid">
+                        <h2>A Footer</h2>
+                    </div>
+                </footer>
             </div>
-        <div id="main-content">
-             <ul class="breadcrumb">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="exhibits.html">Exhibits</a></li>
-                <li>Vehicles</li>
-            </ul>
-            <h2>Vehicles</h2>
-            <p>See the awesome, the funny, and the weirdest of vehicles</p>
-
-
-               <table style="margin-left: auto; margin-right: auto;">
-                <tr> <!-- ROW 1-->
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T1.jpg" alt="Fun Bi-Wheel Fun Car" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Fun Bi-Wheel Fun Car</b></h4>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T2.jpg" alt="Curtiss Wright VZ" style="width:100%; height: 275px;" >
-                            <div class="container">
-                                <h4><b>Curtiss Wright VZ</b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T3.jpg" alt="Lun Class Ekranoplan" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Lun Class Ekranoplan </b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-               <tr> <!-- ROW 2-->
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T4.jpg" alt="One Wheel Motorcycle Goventosa" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>One Wheel Motorcycle Goventosa</b></h4>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T5.jpg" alt="Bicycle Ambulance" style="width:100%; height: 275px;" >
-                            <div class="container">
-                                <h4><b>Bicycle Ambulance</b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T6.jpg" alt="Soviet Jet Train" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Soviet Jet Train </b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr> <!-- ROW 3-->
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T7.jpg" alt="Screw-Drive Train Tank" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Screw-Drive Train Tank</b></h4>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T8.jpg" alt="URAL Snowmobile" style="width:100%; height: 275px;" >
-                            <div class="container">
-                                <h4><b>URAL Snowmobile</b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T9.jpg" alt="Vertol VZ" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Vertol VZ </b></h4> 
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr> <!-- ROW 4-->
-                    <td>
-                        <div class="card">
-                            <img src="./Vehicles/T10.jpg" alt="Snow Chopper" style="width:100%; height: 275px;">
-                            <div class="container">
-                                <h4><b>Snow Chopper</b></h4>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-           
-           
-
-
-        </div>
-        <div id="footer">
-            <br>
-            <p>&copy; 2017 Museum of Science and Technology</p>
-            <span class="copyright-text"><p>The images contained therein in the folders marked 'DaVinci' were created by and belongs to Andrew Chiou. The rights and ownership has been asserted on this day 24 June 2013. The copyright owner gives permission for the images to be used as part of the elements for assessment material for courses offered by Central Queensland University. 
-
-The images contained therein in the folders marked 'Robot' and 'Vehicles' were sourced from various internet websites. These images are not used for profit or business purposes. Its sole purpose is for education. The ownership of these images were never clearly asserted or does not exist at the time of their archival. However, all efforts were made to ensure that these images were sourced from a public domain source where the sites has been clearly been asserted as such. In the event that these images are copyighted and ownership can be evidenced, please contact Andrew Chiou (a.chiou@cqu.edu.au) and the images will be immediately removed from this archive.
-</p></span>
         </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Opening Times</h4>
+                </div>
+                <div class="modal-body">
+                    <table style="text-align: right;">
+                        <tr>
+                            <th>Mon - Thur :</th>
+                            <td>10:00am to 4:00pm</td>
+                        </tr>
+                        <tr>
+                            <th>Fri: </th>
+                            <td>10:00am to 1:00pm, 2:00pm to 6:00pm</td>
+                        </tr>
+                        <tr>
+                            <th>Sat: </th>
+                            <td>8:00am to 4:00pm</td>
+                        </tr>
+                        <tr>
+                            <th>Sun: </th>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <th>Public Holidays: </th>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <a href="about.html">
+                        <p>Click here for more information</p>
+                    </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script>
+
+    </script>
+
 </body>
+
+</html>
