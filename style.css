@@ -98,3 +98,9 @@ ul.breadcrumb li a:hover {
     color: #DE1B1B;
     text-decoration: underline;
 }
+
+/* Footer Text */
+.copyright-text {
+    font-size: 10px;
+    color: gray;
+}
